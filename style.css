@@ -50,7 +50,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: calc(var(--header-height) + 18px);
+    scroll-padding-top: 10px;
 }
 
 body {
@@ -3161,21 +3161,27 @@ body.modal-open { overflow: hidden; }
 
 .site-header .brand-logo {
     display: block;
-    width: 110px;
-    height: 90px;
+    width: 78px;
+    height: 78px;
     object-fit: contain;
     object-position: center;
     max-width: 100%;
+    flex: 0 0 auto;
 }
 
 /* Mobile header logo */
 @media (max-width: 760px) {
     .site-header .brand-logo {
-        width: 85px;
-        height: 70px;
+        width: 68px;
+        height: 68px;
     }
 
     .header-inner {
         gap: 12px;
     }
+}
+
+/* ---------- Anchor alignment fix ---------- */
+#services, #industries, #packages, #contact, #process {
+    scroll-margin-top: 10px;
 }
